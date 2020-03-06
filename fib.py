@@ -1,7 +1,9 @@
-def fibonacci_of(n):
-    if n == 1 or n == 2:
-        return 1
-    return fibonacci_of(n-1) + fibonacci_of(n-2)
+class fibonacci(object):
+    def of(n):
+        dp = [1]*n
+        for i in range(2,n):
+            dp[i] = dp[i-1] + dp[i-2]
+        return dp[n-1]
 
 for i in range(1,201):
-    print(fibonacci_of(i))
+    print(fibonacci.of(i))
